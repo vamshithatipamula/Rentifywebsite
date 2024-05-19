@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+header h1 {
+    margin: 0;
+    color: #007bff;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard Styles */
+#seller, #buyer {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.property {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.property:hover {
+    transform: translateY(-5px);
+}
+
+.property h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.property p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.property button {
+    width: 48%;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.property button.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.property button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.property button.edit-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.property button.edit-btn:hover {
+    background-color: #218838;
+}
+
+.property button.interested-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.property button.interested-btn:hover {
+    background-color: #e0a800;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.filter-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Pagination Styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+/* Like Button Styles */
+.like-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #f8f9fa;
+}
+
+/* FontAwesome Heart Icon */
+.fa-heart {
+    color: #dc3545;
+}
