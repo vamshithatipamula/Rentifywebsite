@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="authentication">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="newfirstName">First Name:</label>
+                <input type="text" id="newfirstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="newlastName">Last Name:</label>
+                <input type="text" id="newlastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="newemail">Email:</label>
+                <input type="email" id="newemail" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="newpassword">Password:</label>
+                <input type="password" id="newpassword" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="newrole">Role:</label>
+                <select id="newrole" name="role" required>
+                    <option value="seller">Seller</option>
+                    <option value="buyer">Buyer</option>
+                </select>
+            </div>
+
+            <button type="submit" class="newbtn">Register</button>
+            <button type="button" class="login">Login</button>
+        </form>
+    </section>
+
+    <section id="loginSection" class="hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginRole">Role:</label>
+                <select id="loginRole" name="role" required>
+                    <option value="seller">Seller</option>
+                    <option value="buyer">Buyer</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </section>
+
+    <section id="seller" class="hidden">
+        <h2>Seller Dashboard</h2>
+        <form id="postPropertyForm">
+            <div class="form-group">
+                <label for="place">Place:</label>
+                <input type="text" id="place" name="place" required>
+            </div>
+            <div class="form-group">
+                <label for="area">Area:</label>
+                <input type="text" id="area" name="area" required>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="nearby">Nearby:</label>
+                <input type="text" id="nearby" name="nearby" required>
+            </div>
+            <button type="submit">Post Property</button>
+        </form>
+        <div id="propertyList"></div>
+    </section>
+
+    <section id="buyer" class="hidden">
+        <h2>Buyer Dashboard</h2>
+        <input type="text" id="filter" placeholder="Filter properties...">
+        <div id="allProperties"></div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
